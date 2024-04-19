@@ -6,7 +6,7 @@ Este repositorio contiene una colección de mini proyectos desarrollados con Rea
 
 | Proyecto | Código | Web |
 | --- | --- | --- |
-| [Buscador de Películas](#buscador-de-películas) | [Ver](buscador-de-películas/) | [Visitar]() |
+| [Buscador de Películas](#buscador-de-películas) | [Ver](buscador-peliculas/) | [Visitar]() |
 
 
 ---
