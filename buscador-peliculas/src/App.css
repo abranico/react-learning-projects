@@ -15,3 +15,22 @@ form {
     width: 40vw;
     max-width: 400px;
 }
+
+.search__title:focus {
+    outline: none;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.movies {
+    list-style: none;
+    margin: 0;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 32px;
+}

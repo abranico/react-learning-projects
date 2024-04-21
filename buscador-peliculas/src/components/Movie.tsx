@@ -8,10 +8,9 @@ interface Props {
 
 const Movie: React.FC<Props> = ({ title, img, year }) => {
   return (
-    <li>
-      <h3>
-        {title} - {year}
-      </h3>
+    <li className="movie" style={{ textAlign: "center" }}>
+      <h4>{title}</h4>
+      <p>{year}</p>
       <img src={img} alt={title} />
     </li>
   );

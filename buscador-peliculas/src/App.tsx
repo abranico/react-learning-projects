@@ -1,15 +1,19 @@
 import Header from "./components/Header";
 import Movies from "./components/Movies";
-import "./App.css";
 import useMovies from "./hooks/useMovies";
+import "./App.css";
 
 function App() {
-  const { movies } = useMovies();
+  const { movies, apiError, getMovies } = useMovies();
 
   return (
     <>
-      <Header />
-      <Movies movies={movies} />
+      <Header onSearch={getMovies} />
+      {!apiError && <Movies movies={movies} />}
+
+      {apiError && (
+        <p style={{ color: "brown", textAlign: "center" }}>{`${apiError}`}</p>
+      )}
     </>
   );
 }

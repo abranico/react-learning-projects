@@ -6,11 +6,11 @@ interface Props {
 }
 
 const Movies: React.FC<Props> = ({ movies }) => {
-  const hasMovies = movies.length > 0 ? true : false;
+  const hasMovies = movies.length === 0 ? false : true;
   return (
     <main>
-      {hasMovies ? (
-        <ul>
+      {hasMovies && (
+        <ul className="movies">
           {movies.map((movie) => (
             <Movie
               key={movie.id}
@@ -20,8 +20,6 @@ const Movies: React.FC<Props> = ({ movies }) => {
             />
           ))}
         </ul>
-      ) : (
-        <p>Pelicula no encontrada</p>
       )}
     </main>
   );
