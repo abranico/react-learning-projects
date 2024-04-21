@@ -1,4 +1,4 @@
-
+﻿
 # React Learning Projects
 
 Este repositorio contiene una colección de mini proyectos desarrollados con React y TypeScript. Cada proyecto está diseñado para explorar diferentes conceptos y características de React, incluyendo el uso de hooks, pruebas unitarias, etc.
@@ -21,5 +21,6 @@ Este proyecto es un buscador de películas que utiliza la API de [OMDb API](http
 
 - [x] Inicialización del proyecto React con TypeScript.
 - [x] Integración del framework de estilos globales sin clases newcss para el diseño de la interfaz.
+- [x] Mostrar películas mediante un custom hook que utiliza useState y useEffect para consumir la API.
 
 ---
