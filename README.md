@@ -4,9 +4,9 @@
 Este repositorio contiene una colección de mini proyectos desarrollados con React y TypeScript. Cada proyecto está diseñado para explorar diferentes conceptos y características de React, incluyendo el uso de hooks, pruebas unitarias, etc.
 
 
-| Proyecto | Código | Web |
-| --- | --- | --- |
-| [Buscador de Películas](#buscador-de-películas) | [Ver](buscador-peliculas/) | [Visitar]() |
+| Número | Proyecto | Código | Web |
+| --- | --- | --- | --- |
+| `01` | [Buscador de Películas](#buscador-de-películas) | [Ver](buscador-peliculas/) | [Visitar]() |
 
 
 ---
