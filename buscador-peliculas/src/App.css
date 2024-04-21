@@ -1,0 +1,17 @@
+h1 {
+    text-align: center;
+}
+
+form {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.search__title {
+    margin-bottom: 0;
+    width: 40vw;
+    max-width: 400px;
+}
