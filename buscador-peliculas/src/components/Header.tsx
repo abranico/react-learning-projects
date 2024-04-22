@@ -29,14 +29,14 @@ const Header: React.FC<Props> = ({ onSearch }) => {
           value={inputValue}
           onChange={handleChange}
           className="search__title"
-          style={{ borderColor: inputError ? "red" : "" }}
+          style={{ borderColor: inputError ? "brown" : "" }}
           placeholder="Avengers, Star Wars, The Matrix..."
         />
         <button type="submit" className="search__submit">
           Buscar
         </button>
       </form>
-      <span style={{ color: "red", display: "block", textAlign: "center" }}>
+      <span style={{ color: "brown", display: "block", textAlign: "center" }}>
         {inputError}
       </span>
     </header>
