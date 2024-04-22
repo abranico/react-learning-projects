@@ -20,6 +20,7 @@ Este proyecto es un buscador de películas que utiliza la API de [OMDb API](http
 - [x] Inicialización del proyecto React con TypeScript.
 - [x] Integración del framework de estilos globales sin clases newcss para el diseño de la interfaz.
 - [x] Buscar películas mediante un custom hook que valida el input de forma controlada usando useEffect y usa useRef para evitar validar en el primer renderizado.
-- [x] Mostrar películas mediante un custom hook que consume la API y maneja los errores.
+- [x] Mostrar películas utilizando un custom hook para consumir la API, gestionar los errores y el loading.
+- [x] Creación de una función helper en la carpeta "services" para dividir la lógica del Fetch.
 
 ---
