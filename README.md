@@ -2,11 +2,11 @@
 # React Learning Projects
 
 Este repositorio contiene una colección de mini proyectos desarrollados con React y TypeScript. Cada proyecto está diseñado para explorar diferentes conceptos y características de React, incluyendo el uso de hooks, pruebas unitarias, etc.
-
+Ademas se ha configurado un flujo de trabajo de GitHub Actions para realizar despliegues automáticos en Surge cada vez que se actualiza alguno de los proyectos en este repositorio. Este flujo de trabajo garantiza que cualquier cambio en el código se refleje automáticamente en la aplicación desplegada en surge.sh. Consulta los archivos YAML en la carpeta .github/workflows para obtener más detalles sobre la configuración.
 
 | Proyecto | Código | Web |
 | --- | --- | --- |
-| [Buscador de Películas](#buscador-de-películas) | [Ver](buscador-peliculas/) | [Visitar]() |
+| [Buscador de Películas](#buscador-de-películas) | [Ver](buscador-peliculas/) | [Visitar]("https://grey-jewel.surge.sh/") |
 
 
 ---

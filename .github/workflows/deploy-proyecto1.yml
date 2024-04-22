@@ -1,0 +1,35 @@
+name: Deploy proyecto1
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "buscador-peliculas/**" # Ruta del proyecto1
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Install dependencies
+        run: |
+          cd buscador-peliculas
+          npm install
+
+      - name: Build project
+        run: npm run build
+
+      - name: Install Surge
+        run: npm install --global surge
+
+      - name: Deploy to Surge
+        run: surge ./dist ${{vars.SURGE_URL_1}} --token ${{secrets.SURGE_TOKEN}}
