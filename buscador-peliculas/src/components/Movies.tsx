@@ -8,7 +8,7 @@ interface Props {
 const Movies: React.FC<Props> = ({ movies }) => {
   const hasMovies = movies.length === 0 ? false : true;
   return (
-    <main>
+    <>
       {hasMovies && (
         <ul className="movies">
           {movies.map((movie) => (
@@ -21,7 +21,7 @@ const Movies: React.FC<Props> = ({ movies }) => {
           ))}
         </ul>
       )}
-    </main>
+    </>
   );
 };
 

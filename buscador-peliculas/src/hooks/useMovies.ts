@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { searchMovies } from "../services/movies";
 import type { ListOfMovies } from "../types";
 
@@ -6,12 +6,16 @@ const useMovies = () => {
   const [movies, setMovies] = useState<ListOfMovies>([]);
   const [apiError, setApiError] = useState<boolean | string>(false);
   const [loading, setLoading] = useState(false);
+  const prevSearch = useRef("");
 
-  const getMovies = async (keyword: string) => {
+  const getMovies = async (search: string) => {
+    if (search === prevSearch.current) return;
+
     try {
       setLoading(true);
       setApiError(false);
-      const newMovies = await searchMovies(keyword);
+      const newMovies = await searchMovies(search);
+      prevSearch.current = search;
       setMovies(newMovies);
     } catch (err: unknown) {
       if (!(err instanceof Error)) return;

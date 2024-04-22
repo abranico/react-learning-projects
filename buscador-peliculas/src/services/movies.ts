@@ -2,8 +2,8 @@ import { type MovieFromApi } from "../types";
 
 const API_KEY = "75597ee4";
 
-export const searchMovies = (keyword: string) => {
-  return fetch(`https://www.omdbapi.com/?apikey=${API_KEY}&s=${keyword}`)
+export const searchMovies = (search: string) => {
+  return fetch(`https://www.omdbapi.com/?apikey=${API_KEY}&s=${search}`)
     .then((res) => {
       if (!res.ok) throw new Error("Error buscando peliculas");
       return res.json();

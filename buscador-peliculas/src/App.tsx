@@ -9,12 +9,13 @@ function App() {
   return (
     <>
       <Header onSearch={getMovies} />
+      <main>
+        {loading && <p style={{ textAlign: "center" }}>Cargando...</p>}
 
-      {loading && <p style={{ textAlign: "center" }}>Cargando...</p>}
+        {!apiError && <Movies movies={movies} />}
 
-      {!apiError && <Movies movies={movies} />}
-
-      {apiError && <p style={{ textAlign: "center" }}>{`${apiError}`}</p>}
+        {apiError && <p style={{ textAlign: "center" }}>{`${apiError}`}</p>}
+      </main>
     </>
   );
 }
