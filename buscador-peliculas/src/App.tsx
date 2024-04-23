@@ -11,9 +11,7 @@ function App() {
       <Header onSearch={getMovies} />
       <main>
         {loading && <p style={{ textAlign: "center" }}>Cargando...</p>}
-
         {!apiError && <Movies movies={movies} />}
-
         {apiError && <p style={{ textAlign: "center" }}>{`${apiError}`}</p>}
       </main>
     </>
