@@ -37,5 +37,7 @@ Este proyecto es una simulación de un carrito de compras que permite a los usua
 ### Tareas Realizadas
 
 - [x] Inicialización del proyecto React con TypeScript.
+- [x] Integración del framework de estilos globales sin clases picocss para el diseño de la interfaz.
+- [x] Mostrar productos utilizando un custom hook para consumir la API con useEffect.
 
 ---
