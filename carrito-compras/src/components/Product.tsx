@@ -8,7 +8,6 @@ const Product: React.FC<Props> = ({
   description,
   category,
   image,
-  rating,
 }) => {
   const newDescription =
     description.length > 50

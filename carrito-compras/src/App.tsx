@@ -6,14 +6,18 @@ import Products from "./components/Products";
 import useProducts from "./hooks/useProducts";
 
 function App() {
-  const { products, handleLimit } = useProducts();
+  const { products, error, loading, handleLimit } = useProducts();
   return (
     <>
       <Header />
       <main className="container">
-        <Products products={products} />
+        {error && <p>{error}</p>}
+        {loading && (
+          <article aria-busy="true" style={{ height: "100%" }}></article>
+        )}
+        {!loading && <Products products={products} />}
       </main>
-      <Footer handleLimit={handleLimit} />
+      {!loading && !error && <Footer handleLimit={handleLimit} />}
     </>
   );
 }
