@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - "buscador-peliculas/**"
+      - "buscador-peliculas/**" # Ruta del proyecto1
 
 jobs:
   build:
@@ -14,8 +14,6 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          path: buscador-peliculas
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
