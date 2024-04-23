@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - "buscador-peliculas/**" # Ruta del proyecto1
+      - "buscador-peliculas/**"
 
 jobs:
   build:
@@ -23,17 +23,21 @@ jobs:
           node-version: 18
 
       - name: Install dependencies
-        run: npm install
-        working-directory: buscador-peliculas
+        run: |
+          cd buscador-peliculas
+          npm install
 
       - name: Build project
-        run: npm run build
-        working-directory: buscador-peliculas
+        run: |
+          cd buscador-peliculas
+          npm run build
 
       - name: Install Surge
-        run: npm install --global surge
-        working-directory: buscador-peliculas
+        run: |
+          cd buscador-peliculas
+          npm install --global surge
 
       - name: Deploy to Surge
-        run: surge ./dist ${{vars.SURGE_URL_1}} --token ${{secrets.SURGE_TOKEN}}
-        working-directory: buscador-peliculas
+        run: |
+          cd buscador-peliculas
+          surge ./dist ${{vars.SURGE_URL_1}} --token ${{secrets.SURGE_TOKEN}}
