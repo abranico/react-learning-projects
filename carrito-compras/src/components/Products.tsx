@@ -7,7 +7,7 @@ interface Props {
 
 const Products: React.FC<Props> = ({ products }) => {
   return (
-    <ul>
+    <ul className="products__container">
       {products.map((product) => (
         <Product
           key={product.id}
