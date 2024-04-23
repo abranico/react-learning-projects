@@ -14,6 +14,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          path: buscador-peliculas
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
@@ -21,15 +23,17 @@ jobs:
           node-version: 18
 
       - name: Install dependencies
-        run: |
-          cd buscador-peliculas
-          npm install
+        run: npm install
+        working-directory: buscador-peliculas
 
       - name: Build project
         run: npm run build
+        working-directory: buscador-peliculas
 
       - name: Install Surge
         run: npm install --global surge
+        working-directory: buscador-peliculas
 
       - name: Deploy to Surge
         run: surge ./dist ${{vars.SURGE_URL_1}} --token ${{secrets.SURGE_TOKEN}}
+        working-directory: buscador-peliculas
