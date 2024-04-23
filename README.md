@@ -6,6 +6,7 @@ Ademas se ha configurado un flujo de trabajo de GitHub Actions para realizar des
 | Número | Proyecto | Código | Web |
 | --- | --- | --- | --- |
 | `01` | [Buscador de Películas](#buscador-de-películas) | [Ver](buscador-peliculas/) | [Visitar](https://grey-jewel.surge.sh/) |
+| `02` | [Carrito de Compras](#carrito-de-compras) | [Ver](carrito-compras/) | [Visitar]() |
 
 
 ---
@@ -24,5 +25,17 @@ Este proyecto es un buscador de películas que utiliza la API de [OMDb API](http
 - [x] Evitar búsquedas duplicadas del mismo término utilizando useRef
 - [x] Mostrar películas utilizando un custom hook para consumir la API, gestionar los errores y el loading.
 - [x] Creación de una función helper en la carpeta "services" para dividir la lógica del Fetch.
+
+---
+
+## Carrito de Compras
+
+### Descripción
+
+Este proyecto es una simulación de un carrito de compras que permite a los usuarios explorar una selección de productos provenientes de [Fake Store API](fakestoreapi.com) y agregarlos al carrito. Los usuarios pueden explorar productos, agregarlos al carrito y gestionar su contenido.
+
+### Tareas Realizadas
+
+- [x] Inicialización del proyecto React con TypeScript.
 
 ---
