@@ -6,7 +6,7 @@ Ademas se ha configurado un flujo de trabajo de GitHub Actions para realizar des
 | Número | Proyecto | Código | Web |
 | --- | --- | --- | --- |
 | `01` | [Buscador de Películas](#buscador-de-películas) | [Ver](buscador-peliculas/) | [Visitar](https://grey-jewel.surge.sh/) |
-| `02` | [Carrito de Compras](#carrito-de-compras) | [Ver](carrito-compras/) | [Visitar](https://bizarre-chair.surge.sh/) |
+| `02` | [Carrito de Compras](#carrito-de-compras) | [Ver](carrito-compras/) | [Visitar]() |
 
 
 ---
@@ -38,7 +38,8 @@ Este proyecto es una simulación de un carrito de compras que permite a los usua
 
 - [x] Inicialización del proyecto React con TypeScript.
 - [x] Integración del framework de estilos globales sin clases picocss para el diseño de la interfaz.
-- [x] Mostrar productos utilizando un custom hook para consumir la API con useEffect y con su propia funcion helper.
+- [x] Mostrar productos utilizando un custom hook para consumir la API con useEffect y con su propia funcion helper que gestiona los errores y el loading.
 - [x] Infinite scrolling para mejorar la experiencia del usuario al cargar productos de manera dinámica
+
 
 ---
