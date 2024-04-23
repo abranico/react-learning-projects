@@ -38,6 +38,7 @@ Este proyecto es una simulación de un carrito de compras que permite a los usua
 
 - [x] Inicialización del proyecto React con TypeScript.
 - [x] Integración del framework de estilos globales sin clases picocss para el diseño de la interfaz.
-- [x] Mostrar productos utilizando un custom hook para consumir la API con useEffect.
+- [x] Mostrar productos utilizando un custom hook para consumir la API con useEffect y con su propia funcion helper.
+- [x] Infinite scrolling para mejorar la experiencia del usuario al cargar productos de manera dinámica
 
 ---
