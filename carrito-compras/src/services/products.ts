@@ -1,4 +1,4 @@
-const fetchProducts = (limit: number) => {
+const fetchProducts = () => {
   return fetch(`https://fakestoreapi.com/products`)
     .then((res) => {
       if (!res.ok) throw new Error("Error al buscar productos");

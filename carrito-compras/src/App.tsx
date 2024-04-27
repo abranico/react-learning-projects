@@ -1,14 +1,13 @@
 import { useContext } from "react";
 import "./App.css";
 import "./Products.css";
-import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Products from "./components/Products";
 import useProducts from "./hooks/useProducts";
 import { FiltersContext } from "./context/filters";
 
 function App() {
-  const { products, error, loading, handleLimit } = useProducts();
+  const { products, error, loading } = useProducts();
   const { category } = useContext(FiltersContext)!;
 
   const fillteredProducts = products.filter((product) => {
@@ -37,7 +36,6 @@ function App() {
         )}
         {!loading && <Products products={fillteredProducts} />}
       </main>
-      {/* {!loading && !error && <Footer handleLimit={handleLimit} />} */}
     </>
   );
 }
