@@ -40,6 +40,8 @@ Este proyecto es una simulación de un carrito de compras que permite a los usua
 - [x] Integración del framework de estilos globales sin clases picocss para el diseño de la interfaz.
 - [x] Mostrar productos utilizando un custom hook para consumir la API con useEffect y con su propia funcion helper que gestiona los errores y el loading.
 - [x] Infinite scrolling para mejorar la experiencia del usuario al cargar productos de manera dinámica
+- [x] Implementación de filtrado de productos por categoría.
+- [x] Utilización de useContext para gestionar estados globales y evitar el patrón de prop drilling.
 
 
 ---
