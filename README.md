@@ -32,14 +32,13 @@ Este proyecto es un buscador de películas que utiliza la API de [OMDb API](http
 
 ### Descripción
 
-Este proyecto es una simulación de un carrito de compras que permite a los usuarios explorar una selección de productos provenientes de [Fake Store API](https://fakestoreapi.com/) y agregarlos al carrito. Los usuarios pueden explorar productos, agregarlos al carrito y gestionar su contenido.
+Este proyecto es una simulación de un carrito de compras que permite a los usuarios explorar una selección de productos provenientes de [Fake Store API](https://fakestoreapi.com/) y agregarlos al carrito. Los usuarios pueden explorar productos, filtrarlos, agregarlos al carrito y gestionar su contenido.
 
 ### Tareas Realizadas
 
 - [x] Inicialización del proyecto React con TypeScript.
 - [x] Integración del framework de estilos globales sin clases picocss para el diseño de la interfaz.
 - [x] Mostrar productos utilizando un custom hook para consumir la API con useEffect y con su propia funcion helper que gestiona los errores y el loading.
-- [x] Infinite scrolling para mejorar la experiencia del usuario al cargar productos de manera dinámica
 - [x] Implementación de filtrado de productos por categoría.
 - [x] Utilización de useContext para gestionar estados globales y evitar el patrón de prop drilling.
 
