@@ -1,3 +1,5 @@
+import Filter from "./Filter";
+
 const Header = () => {
   return (
     <header className="container">
@@ -5,6 +7,11 @@ const Header = () => {
         <ul>
           <li>
             <strong>Carrito de Compras</strong>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <Filter />
           </li>
         </ul>
         <ul>

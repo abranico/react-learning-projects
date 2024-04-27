@@ -12,3 +12,10 @@ export interface Product {
 }
 
 export type ListOfProducts = Array<Product>;
+
+export interface Category {
+  electronics: boolean;
+  jewelery: boolean;
+  mens_clothing: boolean;
+  womens_clothing: boolean;
+}

@@ -9,3 +9,14 @@ footer button {
     height: fit-content;
     padding: 15px 48px;
 }
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: white;
+
+}
+
+nav {
+    flex-wrap: wrap;
+}

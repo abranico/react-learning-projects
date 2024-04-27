@@ -1,5 +1,5 @@
 const fetchProducts = (limit: number) => {
-  return fetch(`https://fakestoreapi.com/products?limit=${limit}`)
+  return fetch(`https://fakestoreapi.com/products`)
     .then((res) => {
       if (!res.ok) throw new Error("Error al buscar productos");
       return res.json();
