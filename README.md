@@ -32,7 +32,7 @@ Este proyecto es un buscador de películas que utiliza la API de [OMDb API](http
 
 ### Descripción
 
-Este proyecto es una simulación de un carrito de compras que permite a los usuarios explorar una selección de productos provenientes de [Fake Store API]([fakestoreapi.com](https://fakestoreapi.com/)) y agregarlos al carrito. Los usuarios pueden explorar productos, agregarlos al carrito y gestionar su contenido.
+Este proyecto es una simulación de un carrito de compras que permite a los usuarios explorar una selección de productos provenientes de [Fake Store API](https://fakestoreapi.com/) y agregarlos al carrito. Los usuarios pueden explorar productos, agregarlos al carrito y gestionar su contenido.
 
 ### Tareas Realizadas
 
