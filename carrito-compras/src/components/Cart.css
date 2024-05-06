@@ -1,0 +1,44 @@
+.cart {
+    background-color: white;
+    height: 100%;
+    display: block;
+    padding: 32px;
+    position: fixed;
+    right: 0px;
+    top: 75px;
+    width: 300px;
+    overflow-y: auto;
+    text-align: center;
+}
+
+.cart img {
+    aspect-ratio: 16/9;
+    width: 100%;
+    object-fit: contain;
+}
+
+.cart li {
+    margin-bottom: 25px;
+    border-bottom: solid 1px black;
+    padding-bottom: 25px;
+}
+
+.cart footer {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-top: 15px;
+}
+
+.cart footer button {
+    padding: 3px 8px;
+
+}
+
+.reset_cart-container {}
+
+.reset_cart {
+    padding: 5px;
+}

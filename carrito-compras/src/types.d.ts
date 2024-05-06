@@ -19,3 +19,11 @@ export interface Category {
   mens_clothing: boolean;
   womens_clothing: boolean;
 }
+
+export interface itemCart {
+  id: number;
+  title: string;
+  price: number;
+  image: string;
+  quantity: number;
+}

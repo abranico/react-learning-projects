@@ -1,14 +1,34 @@
+import { useContext } from "react";
 import type { Product } from "../types";
+import { CartContext } from "../context/cart";
 
 type Props = Product;
 
 const Product: React.FC<Props> = ({
+  id,
   title,
   price,
   description,
   category,
   image,
 }) => {
+  const { cart, addItem, removeItem } = useContext(CartContext);
+  const inCart = cart.find((item) => item.id === id) ? true : false;
+
+  const handleClick = (): void => {
+    if (inCart) {
+      removeItem(id);
+    } else {
+      addItem({
+        id,
+        title,
+        price,
+        image,
+        quantity: 1,
+      });
+    }
+  };
+
   const newDescription =
     description.length > 50
       ? description.substring(0, 50) + "..."
@@ -27,7 +47,12 @@ const Product: React.FC<Props> = ({
       <p className="product__category">{category}</p>
       <p className="product__description">{newDescription}</p>
       <div className="product__actions">
-        <button>Agregar al carrito</button>
+        <button
+          style={{ backgroundColor: inCart ? "red" : "" }}
+          onClick={handleClick}
+        >
+          {inCart ? "Sacar del carrito" : "Agregar al carrito"}
+        </button>
       </div>
     </li>
   );

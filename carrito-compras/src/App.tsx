@@ -5,11 +5,11 @@ import Header from "./components/Header";
 import Products from "./components/Products";
 import useProducts from "./hooks/useProducts";
 import { FiltersContext } from "./context/filters";
+import { CartProvider } from "./context/cart";
 
 function App() {
   const { products, error, loading } = useProducts();
   const { category } = useContext(FiltersContext)!;
-
   const fillteredProducts = products.filter((product) => {
     if (
       !category.electronics &&
@@ -27,8 +27,9 @@ function App() {
   });
 
   return (
-    <>
+    <CartProvider>
       <Header />
+
       <main className="container">
         {error && <p>{error}</p>}
         {loading && (
@@ -36,7 +37,7 @@ function App() {
         )}
         {!loading && <Products products={fillteredProducts} />}
       </main>
-    </>
+    </CartProvider>
   );
 }
 
