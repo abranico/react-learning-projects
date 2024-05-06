@@ -37,10 +37,11 @@ Este proyecto es una simulación de un carrito de compras que permite a los usua
 ### Tareas Realizadas
 
 - [x] Inicialización del proyecto React con TypeScript.
-- [x] Integración del framework de estilos globales sin clases picocss para el diseño de la interfaz.
+- [x] Integración del framework de estilos globales sin clases [picocss](https://picocss.com/) para el diseño de la interfaz.
 - [x] Mostrar productos utilizando un custom hook para consumir la API con useEffect y con su propia funcion helper que gestiona los errores y el loading.
 - [x] Implementación de filtrado de productos por categoría.
 - [x] Utilización de useContext para gestionar estados globales y evitar el patrón de prop drilling.
+- [x] Implementación de carrito de compras utilizando useContext
 
 
 ---
