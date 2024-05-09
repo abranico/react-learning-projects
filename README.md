@@ -37,7 +37,7 @@ Este proyecto es una simulación de un carrito de compras que permite a los usua
 ### Tareas Realizadas
 
 - [x] Inicialización del proyecto React con TypeScript.
-- [x] Integración del framework de estilos globales sin clases [picocss](https://picocss.com/) para el diseño de la interfaz.
+- [x] Integración del framework de estilos globales sin clases picocss para el diseño de la interfaz.
 - [x] Mostrar productos utilizando un custom hook para consumir la API con useEffect y con su propia funcion helper que gestiona los errores y el loading.
 - [x] Implementación de filtrado de productos por categoría.
 - [x] Utilización de useContext para gestionar estados globales y evitar el patrón de prop drilling.
@@ -45,3 +45,16 @@ Este proyecto es una simulación de un carrito de compras que permite a los usua
 
 
 ---
+
+### Gestor de Usuarios
+
+### Descripción
+
+Este proyecto es una aplicación web de gestión de usuarios que permite a los usuarios iniciar sesión y acceder a una lista de usuarios. La aplicación proporciona funcionalidades para ver la lista de usuarios, editar información de usuarios existentes y eliminar usuarios.
+
+### Tareas Realizadas
+
+- [x] Inicialización del proyecto React con TypeScript.
+- [x] Integración del framework de estilos Tailwind CSS para el diseño de la interfaz de usuario.
+- [x] Implementación de la arquitectura Clean Architecture para una mejor organización del código y separación de responsabilidades.
+- [x] Uso de react-router-dom para manejar las rutas y la navegación en la aplicación.
