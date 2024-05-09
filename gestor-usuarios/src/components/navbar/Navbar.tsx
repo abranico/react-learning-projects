@@ -5,6 +5,7 @@ import { logout } from "../../store/slices/auth";
 const Navbar = () => {
   const login = useSelector((store) => store.auth);
   const dispatch = useDispatch();
+
   const handleLogout = () => {
     if (login) dispatch(logout());
   };
