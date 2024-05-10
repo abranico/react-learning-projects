@@ -7,7 +7,7 @@ Ademas se ha configurado un flujo de trabajo de GitHub Actions para realizar des
 | --- | --- | --- | --- |
 | `01` | [Buscador de Películas](#buscador-de-películas) | [Ver](buscador-peliculas/) | [Visitar](https://grey-jewel.surge.sh/) |
 | `02` | [Carrito de Compras](#carrito-de-compras) | [Ver](carrito-compras/) | [Visitar](https://bizarre-chair.surge.sh/) |
-| `02` | [Gestor de Usuarios](#gestor-de-usuarios) | [Ver](gestor-usuarios/) |  |
+| `02` | [Gestor de Usuarios](#gestor-de-usuarios) | [Ver](gestor-usuarios/) | [Visitar](https://tacit-afterthought.surge.sh/dashboard) |
 
 
 ---
@@ -52,6 +52,7 @@ Este proyecto es una simulación de un carrito de compras que permite a los usua
 ### Descripción
 
 Este proyecto es una aplicación web de gestión de usuarios que permite a los usuarios iniciar sesión y acceder a una lista de usuarios. La aplicación proporciona funcionalidades para ver la lista de usuarios, editar información de usuarios existentes y eliminar usuarios.
+Los usuarios son traidos al consumir la api de [Random User](randomuser.me) 
 
 ### Tareas Realizadas
 
@@ -59,3 +60,8 @@ Este proyecto es una aplicación web de gestión de usuarios que permite a los u
 - [x] Integración del framework de estilos Tailwind CSS para el diseño de la interfaz de usuario.
 - [x] Implementación de la arquitectura Clean Architecture para una mejor organización del código y separación de responsabilidades.
 - [x] Uso de react-router-dom para manejar las rutas y la navegación en la aplicación.
+- [x] Implementación de react redux toolkit para manejar el estado global de la aplicación
+- [x] Manejo de autentificación
+- [x] AsyncThunk de redux toolkit para inicializar estado llamando a la API
+- [x] Uso de Custom Hooks para dividir tareas 
+- [x] Funcionalidades de mostrar usuarios y eliminarlos  
