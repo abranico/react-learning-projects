@@ -7,7 +7,7 @@ export interface Auth {
 
 export const authSlice = createSlice({
   name: "auth",
-  initialState: true,
+  initialState: false,
   reducers: {
     login: (_, action: PayloadAction<Auth>) => {
       const { username, password } = action.payload;
