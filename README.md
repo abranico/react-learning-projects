@@ -7,6 +7,7 @@ Ademas se ha configurado un flujo de trabajo de GitHub Actions para realizar des
 | --- | --- | --- | --- |
 | `01` | [Buscador de Películas](#buscador-de-películas) | [Ver](buscador-peliculas/) | [Visitar](https://grey-jewel.surge.sh/) |
 | `02` | [Carrito de Compras](#carrito-de-compras) | [Ver](carrito-compras/) | [Visitar](https://bizarre-chair.surge.sh/) |
+| `02` | [Gestor de Usuarios](#gestor-de-usuarios) | [Ver](gestor-usuarios/) |  |
 
 
 ---
@@ -46,7 +47,7 @@ Este proyecto es una simulación de un carrito de compras que permite a los usua
 
 ---
 
-### Gestor de Usuarios
+# Gestor de Usuarios
 
 ### Descripción
 
