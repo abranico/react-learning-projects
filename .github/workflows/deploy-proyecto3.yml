@@ -1,0 +1,41 @@
+name: Deploy proyecto3
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "gestor-usuarios/**" 
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Install dependencies
+        run: |
+          cd gestor-usuarios
+          npm install
+
+      - name: Build project
+        run: |
+          cd gestor-usuarios
+          npm run build
+
+      - name: Install Surge
+        run: |
+          cd gestor-usuarios
+          npm install --global surge
+
+      - name: Deploy to Surge
+        run: |
+          cd gestor-usuarios
+          surge ./dist ${{vars.SURGE_URL_3}} --token ${{secrets.SURGE_TOKEN}}
