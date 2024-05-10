@@ -1,17 +1,11 @@
-import { useState } from "react";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import "./App.css";
-import {
-  BrowserRouter,
-  NavLink,
-  Navigate,
-  Route,
-  Routes,
-} from "react-router-dom";
 import Navbar from "./components/navbar/Navbar";
+import useAuth from "./hooks/useAuth";
 import Login from "./pages/login/Login";
-import { useSelector } from "react-redux";
+import Dashboard from "./pages/dashboard/Dashboard";
 function App() {
-  const login = useSelector((store) => store.auth);
+  const { auth } = useAuth();
 
   return (
     <>
@@ -20,15 +14,15 @@ function App() {
         <Routes>
           <Route
             path="/"
-            element={<Navigate to={login ? "/dashboard" : "/login"} />}
+            element={<Navigate to={auth ? "/dashboard" : "/login"} />}
           />
           <Route
             path="/login"
-            element={login ? <Navigate to={"/dashboard"} /> : <Login />}
+            element={auth ? <Navigate to={"/dashboard"} /> : <Login />}
           />
           <Route
             path="/dashboard"
-            element={login ? <h2>DASHBOARD</h2> : <Navigate to="/login" />}
+            element={auth ? <Dashboard /> : <Navigate to="/login" />}
           />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>

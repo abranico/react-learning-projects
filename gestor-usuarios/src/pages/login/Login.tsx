@@ -1,15 +1,14 @@
-import { useDispatch } from "react-redux";
-import { login } from "../../store/slices/auth";
-
+import useAuth from "../../hooks/useAuth";
 const Login = () => {
-  const dispatch = useDispatch();
-  const handleLogin = (e: React.FormEvent<HTMLFormElement>) => {
+  const { handleLogin } = useAuth();
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const { username, password } = Object.fromEntries(
       new FormData(e.currentTarget)
     );
     if (username === "admin" && password === "admin") {
-      dispatch(login({ username, password }));
+      handleLogin({ username, password });
       e.currentTarget.reset();
       return;
     }
@@ -23,7 +22,7 @@ const Login = () => {
               Iniciar Sesion
             </h1>
             <form
-              onSubmit={handleLogin}
+              onSubmit={handleSubmit}
               className="space-y-4 md:space-y-6"
               action="#"
             >
