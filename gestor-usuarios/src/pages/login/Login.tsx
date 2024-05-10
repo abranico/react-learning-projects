@@ -1,7 +1,10 @@
+import { useEffect } from "react";
 import useAuth from "../../hooks/useAuth";
 const Login = () => {
   const { handleLogin } = useAuth();
-
+  useEffect(() => {
+    document.title = "Gestor de Usuarios | Login";
+  }, []);
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const { username, password } = Object.fromEntries(

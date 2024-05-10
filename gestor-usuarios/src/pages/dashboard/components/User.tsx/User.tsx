@@ -1,5 +1,5 @@
-import type { Result, UserResult } from "../../../../types";
 import useUsers from "../../../../hooks/useUsers";
+import type { UserResult } from "../../../../types";
 const User: React.FC<UserResult> = ({
   id,
   image,

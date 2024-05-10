@@ -1,8 +1,12 @@
+import { useEffect } from "react";
 import useUsers from "../../hooks/useUsers";
 import User from "./components/User.tsx/User";
 
 const Dashboard = () => {
   const { isLoading, users, error, handleGetUsers } = useUsers();
+  useEffect(() => {
+    document.title = "Gestor de Usuarios | Dashboard";
+  }, []);
   return (
     <section className="max-w-4xl mx-auto p-14">
       <header className="flex items-center">
