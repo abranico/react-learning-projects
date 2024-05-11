@@ -7,7 +7,7 @@ Ademas se ha configurado un flujo de trabajo de GitHub Actions para realizar des
 | --- | --- | --- | --- |
 | `01` | [Buscador de Películas](#buscador-de-películas) | [Ver](buscador-peliculas/) | [Visitar](https://grey-jewel.surge.sh/) |
 | `02` | [Carrito de Compras](#carrito-de-compras) | [Ver](carrito-compras/) | [Visitar](https://bizarre-chair.surge.sh/) |
-| `02` | [Gestor de Usuarios](#gestor-de-usuarios) | [Ver](gestor-usuarios/) | [Visitar](https://tacit-afterthought.surge.sh) |
+| `03` | [Gestor de Usuarios](#gestor-de-usuarios) | [Ver](gestor-usuarios/) | [Visitar](https://tacit-afterthought.surge.sh) |
 
 
 ---
